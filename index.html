@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang=\"en\">
+<head>
+  <meta charset=\"utf-8\" />
+  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />
+  <title>Brittany Snow — Concept 01</title>
+  <link rel=\"stylesheet\" href=\"styles.css\" />
+</head>
+<body>
+  <header class=\"topbar\" id=\"topbar\">
+    <div class=\"brand\">Brittany Snow</div>
+    <nav class=\"nav\" aria-label=\"Main\">
+      <a href=\"#home\">Home</a>
+      <a href=\"#work\">Work</a>
+      <a href=\"#contact\">Contact</a>
+      <button id=\"themeBtn\" aria-label=\"Toggle theme\">☀</button>
+    </nav>
+  </header>
+  <section id=\"home\" class=\"hero\">
+    <h1>Brittany Snow</h1>
+    <p>Minimal, focused, responsive single-page experience.</p>
+    <button onclick=\"document.getElementById('work').scrollIntoView({behavior:'smooth'})\">View Work</button>
+  </section>
+  <section id=\"work\" class=\"grid\">
+    <div class=\"card\">
+      <div class=\"thumb\"></div>
+      <h3>Project A</h3>
+      <p>Concept UI mockup with clean typography.</p>
+    </div>
+    <div class=\"card\">
+      <div class=\"thumb\"></div>
+      <h3>Project B</h3>
+      <p>Responsive components with accessible patterns.</p>
+    </div>
+  </section>
+  <section id=\"contact\" class=\"formsec\">
+    <h2>Contact</h2>
+    <form id=\"contactForm\" onsubmit=\"return false;\">
+      <label>Name<input type=\"text\" required></label>
+      <label>Email<input type=\"email\" required></label>
+      <label>Message<textarea required></textarea></label>
+      <button type=\"submit\">Send</button>
+    </form>
+    <p id=\"status\" aria-live=\"polite\"></p>
+  </section>
+  <footer class=\"foot\">© 2024 Brittany Snow</footer>
+  <script src=\"script.js\"></script>
+</body>
+</html>
