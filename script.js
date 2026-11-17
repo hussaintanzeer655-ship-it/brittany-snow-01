@@ -1,0 +1,4 @@
+(() => {const root=document.documentElement; const btn=document.getElementById('themeBtn');
+  let dark=true; btn.addEventListener('click',()=>{dark=!dark; if(dark){root.style.setProperty('--bg','#0b1020');root.style.setProperty('--card','#141a2b');root.style.setProperty('--text','#e6e6f2');root.style.setProperty('--muted','#a6a6c7');btn.textContent='☾';} else {root.style.removeProperty('--bg');root.style.removeProperty('--card');root.style.removeProperty('--text');root.style.removeProperty('--muted');btn.textContent='☀';}});
+  const form=document.getElementById('contactForm'); const status=document.getElementById('status'); form.addEventListener('submit',()=>{status.textContent='Thanks! Your message is received (demo).'; form.reset();});
+})();
